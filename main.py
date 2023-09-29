@@ -7,7 +7,7 @@ def say(text):
     os.system(f"say {text}")
 def chat(prompt):
     global chat_response
-    openai.api_key = "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"
+    openai.api_key = Key
     chat_response = f'If I told you this """{prompt}""" How will you answer?'
 
     response = openai.Completion.create(
